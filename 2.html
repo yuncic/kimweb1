@@ -1,39 +1,73 @@
 <!doctype html>
 <html>
 <head>
+</script>
   <title>hip_dance</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+  }
+
+   h1{
+     text-align : center;
+      font-size: 45px;
+      border-bottom:2px solid gray;
+      margin:0;
+      padding:20px;
+   }
+   ol{
+     border-right:2px solid gray;
+     width:100px;
+     margin:0;
+   }
+   #grid ol {
+     padding:33px;
+   }
+   #grid{
+     display:grid;
+     grid-template-columns: 150px 1fr;
+   }
+   #article{
+     padding-left :25px;
+   }
+  </style>
+  </script>
 </head>
 <body>
-  <h1><a href="index.html"> HI</a> </h1>
-<ol>
-    <li><a href="1.html">옵션 1</a></li>
-    <li><a href="2.html">옵션 2</a></li>
-    <li><a href="3.html">옵션 3 </a></li>
-    <h2>검색창도 넣고 싶다</h2>
-</<ol>
-  네이버 구글처럼
-<p>
-  <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://hip-dance.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
+  <input type="button"value="night"onclick="
+  document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';"/>
+
+  <input type="button"value="day"onclick="
+  document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';"/>
+
+  <h1><a href="index.html">python</a> </h1>
+  <div id="grid">
+   <ol>
+      <li><a href="1.html"> coding </a></li>
+      <li><a href="2.html" > python </a></li>
+      <li><a href="3.html"> Deep learning  </a></li>
+   </ol>
+      <div id="article">
+        <h2>what is python?</h2>
+        <p>
+Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. <br>
+Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. <br>
+Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. 
+Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.<br>
+<br>
+Often, programmers fall in love with Python because of the increased productivity it provides.<br>
+Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. <br>
+When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. 
+The debugger is written in Python itself, testifying to Python's introspective power.<br>
+On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.<br>
+<br>
+See also some comparisons between Python and other languages.<br>
+      </p>
+      </div>
+</div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
