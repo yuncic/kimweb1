@@ -1,1 +1,3 @@
 # kimweb1
+# My First Web Page. 
+## Once I first started coding...
